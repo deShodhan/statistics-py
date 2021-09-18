@@ -1,0 +1,16 @@
+import statistics
+
+n=str(input('Enter values :'))
+n=[int(x) for x in str(n)]
+y=sorted(n,key=int)
+mean =statistics.mean(n) 
+median=statistics.median(n)
+print('your distribution:',n)
+print('sorted distribution:',y)
+print('mean of the distribution:',mean)  
+print('mean of the distribution:',median)  
+try:
+  mode=statistics.mode(n)
+  print('mode of the distribution:',mode)  
+except:
+  print('No unique mode found') 
