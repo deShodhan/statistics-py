@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+mylabels=['Instagram','Twitter','Snapchat']
+rating=[10,7,3]
+plt.pie(rating,labels=mylabels)
+plt.show()
